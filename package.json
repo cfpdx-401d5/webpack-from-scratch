@@ -1,0 +1,51 @@
+{
+  "name": "webpack-from-scratch",
+  "version": "1.0.0",
+  "description": "learning to build builds",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krogseng/webpack-from-scratch.git"
+  },
+  "author": "Lynn Krogseng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krogseng/webpack-from-scratch/issues"
+  },
+  "homepage": "https://github.com/krogseng/webpack-from-scratch#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
+    "css-loader": "^0.27.3",
+    "eslint-loader": "^1.6.3",
+    "eslint-plugin-react": "^6.10.3",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "babel-loader": "^6.4.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "babel": {
+    "plugins": [
+      "transform-react-jsx"
+    ]
+  }
+}
